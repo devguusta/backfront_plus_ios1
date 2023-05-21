@@ -9,9 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bemVindoLabel: UILabel!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func tappedLoginButton(_ sender: UIButton) {
+        print("olaaa");
+        view.backgroundColor = .green
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bemVindoLabel.text = "Teste UILabel";
+      
     }
 
 
